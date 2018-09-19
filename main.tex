@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.0.1, 11 September 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{altacv}
+
+\usepackage{hyperref}
+\usepackage{fontspec}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+}
+ 
+\urlstyle{same}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+% \fontspec{Dosis}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkBrown}{HTML}{3F2A14}
+\definecolor{Gold}{HTML}{FFD700}
+\definecolor{Black}{HTML}{000000}
+\definecolor{Green}{HTML}{009900}
+
+%\colorlet{heading}{VividPurple}
+\colorlet{heading}{DarkBrown}
+\colorlet{heading-line}{Green}
+\colorlet{accent}{DarkBrown}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{Black}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+
+\begin{document}
+\name{Ivan Trusov}
+\tagline{Desired position: Senior Data Scientist}
+
+\personalinfo{
+  \email{\href{mailto:renardeinside@gmail.com}{renardeinside@gmail.com}}
+  \homepage{\href{https://renardeinside.github.io}{renardeinside.github.io}}
+  \github{\href{https://github.com/renardeinside}{renardeinside}}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cveventnew{Senior Data Scientist}
+    {Sberbank of Russia}
+    {
+        Developed with Apache Spark and Python 5 models for big risk management project.\linebreak
+        Implemented model monitoring system with notification using non-parametric statistical tests on models features and predictions. 
+    }
+    {April 2017 -- Ongoing}
+{}
+
+\divider
+
+\cveventnew{Middle Data Engineer}
+    {Sberbank of Russia}
+    {
+        Implemented various ETL algorithms for different analytical requests. \linebreak
+        Integrated CDH cluster with IPA for Kerberos security and production user access solution.
+    }
+    {September 2016 -- April 2017}
+{}
+
+\divider
+
+\cveventnew{Middle Data Scientist}
+    {MobileTeleSystems (MTS)}
+    {
+        Created prediction models for target marketing in Apache Spark and Python. \linebreak
+        Implemented various geolocation algorithms in Teradata SQL. \linebreak
+        Created streaming data pipeline for CDR parsing in Spark Streaming. \linebreak
+    }
+    {December 2015 -- September 2016}
+{}
+
+\divider
+
+\cveventnew{Junior Data Scientist}
+    {Veon Russia}
+    {
+        Created models for churn prediction, tariff migration and device migration in Python. \linebreak
+        Developed data pipeline in Apache Spark for loading historical datamarts from Oracle DB to Hive. \linebreak
+        Implemented discount optimization algorithm with Apache Spark in Scala.
+    }
+    {December 2014 -- December 2015}
+{}
+
+\divider
+
+\cveventnew{Junior Data Scientist}
+    {MobileTeleSystems (MTS)}
+    {
+    Developed in Python web scraping data pipeline for MNP process. \linebreak
+    Developed optimization algorithm for A/B split, based on the Kolmogorov-Smirnov test acceptance of samples. 
+    }
+    {March 2014 -- December 2014} 
+{}
+
+% Introduce, Implement, 
+% add diploma themes
+% Experience -> Employment 
+% Add lectures experience 
+% Add skills section with languages 
+% Add objective (or a position) which i want to get 
+% Add achievements & interests section 
+% Add Personal statements 
+% Move in X to the end of statements
+% Add photo 
+
+\clearpage
+
+
+\end{document}
