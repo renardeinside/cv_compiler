@@ -38,7 +38,14 @@
 \geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
 
 % Change the font if you want to.
-\setmainfont{Lato}
+\setmainfont[Path = ./,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .otf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Light
+ ]
+{Dosis}
 % \fontspec{Dosis}
 
 % Change the colours if you want to
